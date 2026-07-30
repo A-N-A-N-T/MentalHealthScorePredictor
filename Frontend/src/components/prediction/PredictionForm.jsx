@@ -44,7 +44,7 @@ const PredictionForm = ({
                 "/predictionYourMentalScore",
                 formData
             );
-
+           
             setPrediction(data.predicted_mental_health_score);
 
             toast.success("Prediction Generated Successfully");

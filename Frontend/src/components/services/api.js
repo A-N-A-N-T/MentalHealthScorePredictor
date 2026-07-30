@@ -1,10 +1,13 @@
 import axios from "axios";
 
 const api = axios.create({
-    baseURL: "https://yourmentalstressscorepredictor.onrender.com",
+    
+    baseURL: import.meta.env.VITE_BACKEND_URL,
     headers: {
         "Content-Type": "application/json",
     },
 });
 
+
 export default api;
+
